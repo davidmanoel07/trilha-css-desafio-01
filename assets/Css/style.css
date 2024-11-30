@@ -1,0 +1,174 @@
+@import url('reset.css'); /* Importa o arquivo reset.css para remover estilos padrões dos navegadores */
+
+/* Estilo geral do corpo */
+body {
+  background-color: black; /* Define o fundo da página como preto */
+}
+
+/* Estilo dos títulos de nível 2 */
+h2 {
+  font-size: 2rem; /* Tamanho da fonte do título */
+  color: #33A8DB; /* Cor azul do texto */
+  font-weight: bold; /* Deixa o texto em negrito */
+  letter-spacing: 4px; /* Espaçamento entre as letras */
+  text-transform: uppercase; /* Converte o texto para letras maiúsculas */
+  margin-bottom: 24px; /* Margem inferior do título */
+}
+
+/* Estilo geral para parágrafos */
+p {
+  color: white; /* Define a cor do texto como branco */
+}
+
+/* Estilo geral para as seções */
+section {
+  margin: 100px auto; /* Adiciona margem superior e inferior e centraliza horizontalmente */
+}
+
+/* Estilo do banner principal */
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('../images/banner.png'); 
+  /* Aplica um gradiente sobre a imagem de fundo */
+  background-size: cover; /* Faz a imagem de fundo cobrir toda a área do banner */
+  background-repeat: no-repeat; /* Evita repetição da imagem de fundo */
+  height: 600px; /* Altura do banner */
+  padding-top: 60px; /* Espaçamento superior dentro do banner */
+  border-bottom: 1px solid #33A8DB80; /* Linha na parte inferior do banner */
+}
+
+/* Conteúdo dentro do banner */
+.banner .banner-content {
+  color: white; /* Define a cor do texto como branco */
+  width: 600px; /* Define a largura do conteúdo */
+  margin: auto; /* Centraliza o conteúdo horizontalmente */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo do título principal no banner */
+.banner h1 {
+  font-size: 2.5rem; /* Tamanho da fonte */
+  font-weight: 900; /* Deixa o texto mais grosso */
+  text-transform: uppercase; /* Converte o texto para letras maiúsculas */
+  color: transparent; /* Deixa o texto transparente */
+  background: -webkit-linear-gradient(#33A8DB, #1472B7); /* Aplica gradiente ao texto */
+  background-clip: text; /* Recorta o fundo no formato do texto */
+  -webkit-background-clip: text; /* Compatibilidade com navegadores baseados no WebKit */
+}
+
+/* Estilo dos parágrafos no banner */
+.banner p {
+  font-size: 1.25rem; /* Tamanho da fonte do parágrafo */
+  margin: 16px 0 24px; /* Margens superiores e inferiores */
+}
+
+/* Estilo do logotipo no banner */
+.banner .logo {
+  background-color: rgba(0, 0, 0, .2); /* Fundo com transparência */
+  height: 260px; /* Altura do logotipo */
+  width: 260px; /* Largura do logotipo */
+  margin: auto; /* Centraliza horizontalmente */
+  border-radius: 50%; /* Deixa o logotipo circular */
+  padding: 16px; /* Espaçamento interno */
+  margin-bottom: 16px; /* Espaçamento abaixo do logotipo */
+}
+
+/* Estilo da imagem dentro do logotipo */
+.banner .logo img {
+  margin: auto; /* Centraliza horizontalmente */
+  width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
+  height: 100%; /* Faz a imagem ocupar toda a altura do contêiner */
+  object-fit: contain; /* Mantém a proporção da imagem */
+}
+
+/* Estilo do botão no banner */
+.banner .banner-content button {
+  color: #31A8DD; /* Cor do texto do botão */
+  font-size: 1rem; /* Tamanho da fonte */
+  font-weight: bold; /* Deixa o texto em negrito */
+  padding: 16px 32px; /* Espaçamento interno do botão */
+  text-transform: uppercase; /* Texto em maiúsculas */
+  letter-spacing: 4px; /* Espaçamento entre as letras */
+  background-color: transparent; /* Fundo transparente */
+  border-image: linear-gradient(#3BA1CD, #1572B7); /* Aplica gradiente à borda */
+  border-image-slice: 10; /* Ajusta o gradiente da borda */
+  border-radius: 30px; /* Arredonda os cantos do botão */
+}
+
+/* Estilo do conteúdo sobre os módulos do curso */
+#course-content {
+  width: 800px; /* Define a largura da seção */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Lista de módulos */
+#course-content .modules-list {
+  margin: 24px 0; /* Margem superior e inferior */
+}
+
+/* Estilo de cada módulo */
+#course-content .modules-list .module {
+  color: white; /* Cor do texto */
+  width: 530px; /* Largura do módulo */
+  margin: 0 auto 24px; /* Centraliza e adiciona margem inferior */
+  border: 1px solid #33A8DB; /* Borda azul */
+  background-color: #252525; /* Fundo cinza-escuro */
+  padding: 16px; /* Espaçamento interno */
+  border-radius: 100px; /* Arredonda os cantos */
+  box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7); /* Sombra interna */
+}
+
+/* Destaque nos títulos dos módulos */
+#course-content .modules-list .module span {
+  color: #33A8DB; /* Cor azul para os textos destacados */
+}
+
+/* Seção com imagem de fundo fixa */
+#transform-world {
+  height: 560px; /* Altura da seção */
+  background-size: cover; /* Faz a imagem cobrir a área */
+  background-image: url("../images/woman-code.png"); /* Imagem de fundo */
+  background-attachment: fixed; /* Fixa a imagem ao rolar a página */
+  border-top: 1px solid #33A8DB80; /* Linha na parte superior */
+  border-bottom: 1px solid #33A8DB80; /* Linha na parte inferior */
+  padding: 200px; /* Espaçamento interno */
+}
+
+/* Texto na seção 'Transforme o Mundo' */
+#transform-world p {
+  font-weight: 900; /* Texto em negrito */
+  font-size: 2.5rem; /* Tamanho da fonte */
+  text-transform: lowercase; /* Texto em minúsculas */
+  max-width: 250px; /* Limita a largura do texto */
+  text-shadow: 3px 2px #33A8DB; /* Sombra azul no texto */
+}
+
+/* Seção de desafios profissionais */
+#professional-challenges {
+  text-align: center; /* Centraliza o texto */
+  width: 800px; /* Define a largura */
+}
+
+/* Estilo da imagem nessa seção */
+#professional-challenges img {
+  margin: 32px 0; /* Margens superior e inferior */
+}
+
+/* Estilo do rodapé */
+footer {
+  padding: 60px 0; /* Espaçamento interno superior e inferior */
+  text-align: center; /* Centraliza o conteúdo */
+  background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2)); /* Gradiente no fundo */
+  border-top: 1px solid #33A8DB80; /* Linha na parte superior */
+}
+
+/* Logotipo no rodapé */
+footer .dio-logo {
+  width: 300px; /* Define a largura da imagem */
+}
+
+/* Links no rodapé */
+footer a {
+  color: #33A8DB; /* Cor do link */
+  font-weight: bold; /* Deixa o texto em negrito */
+  text-decoration: none; /* Remove o sublinhado */
+}
